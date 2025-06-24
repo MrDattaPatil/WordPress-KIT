@@ -1,0 +1,31 @@
+[21-Jun-2025 12:10:26 UTC] PHP Warning:  Undefined property: WP_Ajax_Upgrader_Skin::$api in /home/sujan/Local Sites/carpentry-prototype/app/public/wp-admin/includes/class-theme-upgrader.php on line 160
+[21-Jun-2025 12:11:18 UTC] PHP Warning:  Undefined array key "id" in /home/sujan/Local Sites/carpentry-prototype/app/public/wp-content/themes/ona/freemius/templates/connect/permission.php on line 29
+[21-Jun-2025 12:11:18 UTC] PHP Warning:  Undefined array key "id" in /home/sujan/Local Sites/carpentry-prototype/app/public/wp-content/themes/ona/freemius/templates/connect/permission.php on line 29
+[21-Jun-2025 12:11:18 UTC] PHP Warning:  Undefined array key "id" in /home/sujan/Local Sites/carpentry-prototype/app/public/wp-content/themes/ona/freemius/templates/connect/permission.php on line 30
+[21-Jun-2025 12:51:59 UTC] PHP Warning:  Undefined array key "first-path" in /home/sujan/Local Sites/carpentry-prototype/app/public/wp-content/plugins/b-carousel-block/bplugins_sdk/inc/Base/FSActivate.php on line 55
+[21-Jun-2025 13:15:30 UTC] PHP Warning:  Undefined array key "url" in /home/sujan/Local Sites/carpentry-prototype/app/public/wp-content/plugins/woorise/includes/class-woorise-embed.php on line 147
+[21-Jun-2025 13:15:30 UTC] PHP Fatal error:  Uncaught TypeError: Woorise_Embed::get_embed(): Argument #1 ($url) must be of type string, null given, called in /home/sujan/Local Sites/carpentry-prototype/app/public/wp-content/plugins/woorise/includes/class-woorise-embed.php on line 147 and defined in /home/sujan/Local Sites/carpentry-prototype/app/public/wp-content/plugins/woorise/includes/class-woorise-embed.php:100
+Stack trace:
+#0 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-content/plugins/woorise/includes/class-woorise-embed.php(147): Woorise_Embed->get_embed(NULL)
+#1 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/class-wp-block.php(586): Woorise_Embed->woorise_embed_block_handler(Array, '', Object(WP_Block))
+#2 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/blocks.php(2358): WP_Block->render()
+#3 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/blocks.php(2410): render_block(Array)
+#4 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/class-wp-hook.php(324): do_blocks('<!-- wp:woorise...')
+#5 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/plugin.php(205): WP_Hook->apply_filters('<!-- wp:woorise...', Array)
+#6 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php(652): apply_filters('the_content', '<!-- wp:woorise...')
+#7 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(460): WP_REST_Revisions_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#8 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(253): WP_REST_Autosaves_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#9 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/rest-api/class-wp-rest-server.php(1292): WP_REST_Autosaves_Controller->create_item(Object(WP_REST_Request))
+#10 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/rest-api/class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#11 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#12 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/rest-api.php(459): WP_REST_Server->serve_request('/wp/v2/pages/48...')
+#13 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#14 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#15 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#16 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#17 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/class-wp.php(818): WP->parse_request('')
+#18 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-includes/functions.php(1342): WP->main('')
+#19 /home/sujan/Local Sites/carpentry-prototype/app/public/wp-blog-header.php(16): wp()
+#20 /home/sujan/Local Sites/carpentry-prototype/app/public/index.php(17): require('/home/sujan/Loc...')
+#21 {main}
+  thrown in /home/sujan/Local Sites/carpentry-prototype/app/public/wp-content/plugins/woorise/includes/class-woorise-embed.php on line 100
